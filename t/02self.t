@@ -1,0 +1,13 @@
+use Test;
+BEGIN { plan tests => 5 };
+use B::Source;
+ok(1);
+$, = "\n";
+*_ = index_source->{$0};
+ok($_{1} =~ /^\Quse Test;
+BEGIN { plan tests => 5 };
+use B::Source;
+\E$/ );
+ok($_{4} =~ /^\Qok(1);\E$/);
+ok($_{5} =~ /^\$, = "\\n";$/ );
+ok($_{6} =~ /^\*_ = index_source->\{\$0\};$/);

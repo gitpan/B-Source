@@ -1,0 +1,6 @@
+Revision history for Perl extension B::Source.
+
+0.01  Fri Dec 12 18:24:40 2003
+	- original version; created by h2xs 1.21 with options
+		-n B::Source -X
+
